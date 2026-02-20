@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-    <title>CalBill's Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalBill | Personal Page</title>
+    <style>
+        /* CSS 样式：负责美化 */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        header { text-align: center; padding: 50px 0; background: #003262; color: white; border-radius: 10px; margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 2.5em; }
+        .container { background: white; padding: 30px; border-radius: 10px; shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .section-title { border-left: 5px solid #FDB515; padding-left: 15px; margin-top: 30px; color: #003262; }
+        .tag { display: inline-block; background: #e1e8ed; padding: 5px 12px; border-radius: 15px; font-size: 0.9em; margin-right: 5px; }
+        pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        a { color: #003262; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>这是 CalBill 的个人主页测试页面。</p>
+
+<header>
+    <h1>CalBill</h1>
+    <p>Statistics Enthusiast | Data Science Learner</p>
+</header>
+
+<div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>👋 你好！我是 CalBill。目前在探索统计学和概率论。我对数据分析、信号处理以及如何用 Python 解决数学问题非常感兴趣。</p>
+    <div>
+        <span class="tag">Python</span>
+        <span class="tag">Statistics</span>
+        <span class="tag">LaTeX</span>
+        <span class="tag">GitHub Pages</span>
+    </div>
+
+    <h2 class="section-title">Current Projects</h2>
+    <div class="grid">
+        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+            <h3>📊 信号噪声模拟</h3>
+            <p>使用 NumPy 生成带噪声的余弦信号，用于统计推导练习。</p>
+        </div>
+        <div style="border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+            <h3>🏠 个人主页搭建</h3>
+            <p>基于 GitHub Pages 的静态站点构建项目。</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Code Snippet</h2>
+    <p>这是我最近在处理的代码逻辑：</p>
+    <pre>
+# Generating a noisy sinusoid
+y = B0 + R * np.cos(2 * np.pi * f * t + phi) + np.random.normal(0, np.sqrt(var_eps), size=len(t))
+    </pre>
+
+    <h2 class="section-title">Contact</h2>
+    <p>📧 Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <p>🔗 GitHub: <a href="https://github.com/CalBill">github.com/CalBill</a></p>
+</div>
+
+<footer style="text-align: center; margin-top: 40px; font-size: 0.8em; color: #888;">
+    &copy; 2026 CalBill. Built with ❤️ and GitHub Pages.
+</footer>
+
 </body>
 </html>
